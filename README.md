@@ -1,7 +1,8 @@
 # SegmentBarDemo
 类似ios UISegmentedControl的自定义控件
 
-![image](https://github.com/huweijian5/SegmentBarDemo/screenshots/device-2016-09-28-230043.png)
+![image](https://github.com/huweijian5/SegmentBarDemo/blob/master/screenshots/device-2016-09-28-230043.png)
+
 Step 1.Add it in your root build.gradle at the end of repositories:
 
 	allprojects {
