@@ -1,4 +1,4 @@
-# SegmentBarDemo
+# SegmentBar
 类似ios UISegmentedControl的自定义控件
 
 ![image](https://github.com/huweijian5/SegmentBarDemo/blob/master/screenshots/device-2016-09-28-230043.png)
