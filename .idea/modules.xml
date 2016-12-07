@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SegmentBarDemo.iml" filepath="$PROJECT_DIR$/SegmentBarDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegmentBar.iml" filepath="$PROJECT_DIR$/SegmentBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_segmentbar/lib_segmentbar.iml" filepath="$PROJECT_DIR$/lib_segmentbar/lib_segmentbar.iml" />
     </modules>
