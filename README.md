@@ -1,15 +1,14 @@
 # SegmentBar
 类似ios UISegmentedControl的自定义控件
----
+
+## 介绍说明
+多标签切换控件，提供更多接口供用户自定义
 ![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/20170103233539.png)
 ---
 ![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/device-2017-01-03-232935.mp4_1483457597.gif)
 ---
-##介绍说明
-多标签切换控件，提供更多接口供用户自定义
----
-##使用说明
-###示例（参考demo）
+## 使用说明
+### 示例（参考demo）
 ```
  <com.hwj.junmeng.sb.SegmentBar xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/sb_tab"
@@ -22,7 +21,7 @@
             app:sbar_labelTextSize="20sp"
              />
 ```
-###开放如下属性进行自定义设置
+### 开放如下属性进行自定义设置
 ```
 <declare-styleable name="SegmentBar">
         <!--选中背景颜色-->
@@ -59,12 +58,12 @@
         <attr name="sbar_unreadBackgroundColor" format="color"></attr>
     </declare-styleable>
 ```
-###注意
+### 注意
 * 如果显示未读数时不需要数字，那么可以通过接口
-public void setUnreadTextSize(float sp);
-public void setUnreadPadding(float dp);综合进行设置红点的大小。
+	public void setUnreadTextSize(float sp);
+	public void setUnreadPadding(float dp);综合进行设置红点的大小。
 * 设置未读数的接口：public void setLabelUnreadCount(int labelIndex, int unreadCount);
-其中，unreadCount的值为-1时表示显示红点，为0时表示不显示红点，大于0时显示红点和数字。
+	其中，unreadCount的值为-1时表示显示红点，为0时表示不显示红点，大于0时显示红点和数字。
 * 其他接口请看源码或JavaDoc文档
 ---
 ## JavaDoc文档
