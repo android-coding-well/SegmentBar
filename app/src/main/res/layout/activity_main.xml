@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hwj.demo.sb.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <com.hwj.junmeng.sb.SegmentBar xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/sb_tab"
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:sbar_defaultIndex="1"
-        app:sbar_padding="10dp"
-        app:sbar_borderWidth="1dp"
-        app:sbar_textArray="标签1|标签2|标签3" />
-</RelativeLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.hwj.demo.sb.MainActivity">
+
+
+        <com.hwj.junmeng.sb.SegmentBar
+            android:id="@+id/sb_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sbar_borderWidth="1dp"
+            app:sbar_defaultIndex="1"
+            app:sbar_labelPadding="10dp"
+            app:sbar_labelArray="标签1|标签2|标签3"
+            app:sbar_labelTextSize="20sp"
+             />
+
+
+
+        <com.hwj.junmeng.sb.SegmentBar
+            android:id="@+id/sb_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:sbar_borderWidth="1dp"
+            app:sbar_defaultIndex="1"
+            app:sbar_labelPadding="10dp"
+            app:sbar_labelArray="标签1|标签2|标签3|标签4"
+            app:sbar_unreadMarginRight="10dp"
+            app:sbar_unreadMarginTop="5dp"
+            app:sbar_unreadPadding="1dp"
+            app:sbar_unreadTextSize="8sp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:onClick="onClickChangeUnread"
+            android:text="改变未读数（-1不显示，0不显示数字）" />
+
+
+        <com.hwj.junmeng.sb.SegmentBar
+            android:id="@+id/sb_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:sbar_borderWidth="1dp"
+            app:sbar_labelPadding="10dp"
+            app:sbar_labelArray="标签1|标签2|标签3|标签4"
+            app:sbar_unreadMarginRight="10dp"
+            app:sbar_unreadMarginTop="5dp"
+            app:sbar_unreadPadding="1dp"
+            app:sbar_unreadTextSize="8sp"
+            />
+
+         <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:onClick="onClickChangeLabel"
+           android:text="改变标签数组" />
+    </LinearLayout>
+</layout>
