@@ -60,11 +60,15 @@
 ```
 ### 注意
 * 如果显示未读数时不需要数字，那么可以通过接口
+
 	public void setUnreadTextSize(float sp);
+	
 	public void setUnreadPadding(float dp);综合进行设置红点的大小。
 * 设置未读数的接口：public void setLabelUnreadCount(int labelIndex, int unreadCount);
+
 	其中，unreadCount的值为-1时表示显示红点，为0时表示不显示红点，大于0时显示红点和数字。
 * 其他接口请看源码或JavaDoc文档
+
 ---
 ## JavaDoc文档
 
