@@ -3,9 +3,9 @@
 
 ## 介绍说明
 多标签切换控件，提供更多接口供用户自定义
-![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/20170103233539.png)
+![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/20170104222947.png)
 ---
-![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/device-2017-01-03-232935.mp4_1483457597.gif)
+![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/device-2017-01-04-223411.mp4_1483540546.gif)
 ---
 ## 使用说明
 ### 示例（参考demo）
