@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:onClick="onClickChangeUnread"
-            android:text="改变未读数（-1不显示，0不显示数字）" />
+            android:text="改变未读数" />
 
 
         <com.hwj.junmeng.sb.SegmentBar
@@ -70,6 +70,6 @@
            android:layout_height="wrap_content"
            android:layout_marginTop="5dp"
            android:onClick="onClickChangeLabel"
-           android:text="改变标签数组" />
+           android:text="改变标签个数" />
     </LinearLayout>
 </layout>

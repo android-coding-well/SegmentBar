@@ -239,8 +239,8 @@ public class SegmentBar extends View {
     /**
      * 设置标签未读个数
      *
-     * @param labelIndex
-     * @param unreadCount
+     * @param labelIndex   标签下标
+     * @param unreadCount  未读数（-1：只显示红点，0：不显示 ,>0显示红点和数字）
      */
     public void setLabelUnreadCount(int labelIndex, int unreadCount) {
         if (labelIndex < texts.length && labelIndex >= 0) {
