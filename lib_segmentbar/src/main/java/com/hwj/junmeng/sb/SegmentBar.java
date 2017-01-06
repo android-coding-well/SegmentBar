@@ -188,7 +188,7 @@ public class SegmentBar extends View {
                 unreadPaint.setTextSize(unreadTextSize);
                 unreadPaint.setStrokeWidth(borderWidth);
                 //未读数文字的宽度
-                canvas.drawText("" + unreadTexts[i], redCenterX - unreadTextWidth / 2.0f, redCenterY + unreadTextHeight / 2.0f - unreadTextHeight / 4.0f, unreadPaint);
+                canvas.drawText("" + unreadTexts[i], redCenterX - unreadTextWidth / 2.0f, redCenterY + unreadTextHeight / 2.0f - unreadTextHeight / 5.0f, unreadPaint);
             }
 
 

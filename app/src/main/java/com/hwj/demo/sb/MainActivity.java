@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTab2() {
+        binding.sbTab2.setUnreadTextSize(10);
     }
 
     private void initTab1() {
