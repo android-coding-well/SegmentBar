@@ -70,6 +70,8 @@
 * 设置未读数的接口：public void setLabelUnreadCount(int labelIndex, int unreadCount);
 
 	其中，unreadCount的值为-1时表示显示红点，为0时表示不显示红点，大于0时显示红点和数字。
+* 默认未读数超过99则显示省略号，可通过接口：public void setMaxUnreadCount(int maxUnreadCount);设置
+* 如果需要显示3位数未读数（不建议显示到3位），通过接口：public void setUnreadPadding(float dp);设置红点大小
 * 其他接口请看源码或JavaDoc文档
 
 ---
