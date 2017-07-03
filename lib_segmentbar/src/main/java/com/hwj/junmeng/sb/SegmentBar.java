@@ -47,8 +47,11 @@ public class SegmentBar extends View {
     private float textHeight;           //标签文字高度
     private float unreadTextHeight;     //未读数文字高度
 
+    private int maxUnreadCount=99;//显示的最大未读数
+
     private String[] texts;//标签数组
     private int[] unreadTexts;//标签未读数数组
+    private int maxUnreadBit;//未读数最大位数，用于计算圆点宽度
 
     OnItemClickListener listener;
     GradientDrawable gradientDrawable = new GradientDrawable();
@@ -172,7 +175,13 @@ public class SegmentBar extends View {
             unreadPaint.setTextSize(unreadTextSize);
             unreadPaint.setColor(unreadBackgroundColor);
             int unreadCount = unreadTexts[i];
-            int unreadTextWidth = getTextWidth(unreadPaint, "" + unreadTexts[i]);
+            String unreadText="";
+            if(unreadCount>maxUnreadCount){
+                unreadText="...";
+            }else{
+                unreadText=""+unreadCount;
+            }
+            int unreadTextWidth = getTextWidth(unreadPaint, unreadText);
             unreadTextHeight = unreadPaint.descent() - unreadPaint.ascent();
             float redRadius = unreadTextHeight / 2.0f + unreadPadding;//红点的半径
             float redCenterX = labelWidth * (i + 1) - redRadius - unreadMarginRight;//红点的中心x
@@ -188,7 +197,7 @@ public class SegmentBar extends View {
                 unreadPaint.setTextSize(unreadTextSize);
                 unreadPaint.setStrokeWidth(borderWidth);
                 //未读数文字的宽度
-                canvas.drawText("" + unreadTexts[i], redCenterX - unreadTextWidth / 2.0f, redCenterY + unreadTextHeight / 2.0f - unreadTextHeight / 5.0f, unreadPaint);
+                canvas.drawText(unreadText, redCenterX - unreadTextWidth / 2.0f, redCenterY + unreadTextHeight / 2.0f - unreadTextHeight / 5.0f, unreadPaint);
             }
 
 
@@ -237,6 +246,15 @@ public class SegmentBar extends View {
     }
 
     /**
+     * 设置最大未读数，超过此数则显示“...”,默认99
+     */
+    public void setMaxUnreadCount(int maxUnreadCount){
+        this.maxUnreadCount=maxUnreadCount;
+        invalidate();
+    }
+
+
+    /**
      * 设置标签未读个数
      *
      * @param labelIndex   标签下标
@@ -266,6 +284,8 @@ public class SegmentBar extends View {
         this.unreadBackgroundColor = color;
         invalidate();
     }
+
+
 
     /**
      * 设置未读数上边距

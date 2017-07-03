@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickChangeUnread(View view) {
         for (int i = 0; i < binding.sbTab2.getLabelCount(); i++) {
-            binding.sbTab2.setLabelUnreadCount(i, (int) (Math.random() * 12) - 1);
+            binding.sbTab2.setLabelUnreadCount(i, (int) (Math.random() * 120) - 1);
         }
     }
 

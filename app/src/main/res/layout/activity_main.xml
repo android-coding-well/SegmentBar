@@ -39,7 +39,7 @@
             app:sbar_labelArray="标签1|标签2|标签3|标签4"
             app:sbar_unreadMarginRight="10dp"
             app:sbar_unreadMarginTop="5dp"
-            app:sbar_unreadPadding="1dp"
+            app:sbar_unreadPadding="3dp"
             app:sbar_unreadTextSize="8sp"
             />
 
