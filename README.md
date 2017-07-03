@@ -3,7 +3,12 @@
 
 ## 介绍说明
 多标签切换控件，提供更多接口供用户自定义
+
+
+![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/QQ%E6%88%AA%E5%9B%BE20170703231924.png)
+![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/QQ%E6%88%AA%E5%9B%BE20170703232051.png)
 ![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/20170104222947.png)
+
 ---
 ![image](https://github.com/huweijian5/SegmentBar/blob/master/screenshots/device-2017-01-04-223411.mp4_1483540546.gif)
 ---
